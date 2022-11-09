@@ -19,8 +19,9 @@ main {
     flex-direction: column;
     gap: 47px;
     text-align: center;
+    margin: 0 30px;
 }
-
+/* first section */
 .learn-first {
     display: flex;
     flex-direction: column;
@@ -39,5 +40,20 @@ h1 {
     width: 80%;
     font-weight: 600;
     line-height: 1.5;
+}
+/* Second section */
+.learn-sec {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+.free-days{
+    padding: 23px;
+    border-radius: 10px;
+    border: none;
+    background-color: #6812b9;
+    color: white;
+    font-size: 15px;
+    box-shadow: 0px 10px 4px hsl(0deg 87% 69%);
 }
 
