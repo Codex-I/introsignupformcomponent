@@ -98,3 +98,40 @@ form button {
     font-weight: 800;
     color: hsl(0, 100%, 74%);
 }
+
+/* FOR LARGE SCREEN(laptopsize) */
+
+@media only screen and (min-width: 750px) {
+    body {
+        background-image: url(../images/bg-intro-desktop.png);
+        background-color: hsl(0, 100%, 74%);
+        width: 81%;
+        margin: 10% auto;
+        align-items: center;
+        height: 100vh;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+        justify-content: center;
+        gap: 67px;
+        margin-top: 5px;
+    }
+
+    h1 {
+        width: 375px;
+    }
+
+    .learn-first {
+        align-items: flex-start;
+        padding-top: 163px;
+        text-align: left;
+    }
+    .learn-first p {
+        display: flex;
+        font-size: 16px;
+        width: 483px;
+    }
+}
