@@ -1,5 +1,42 @@
+@import url("https://fonts.google.com/specimen/Poppins");
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+body {
+    background-image: url(../images/bg-intro-mobile.png);
+    background-color:  hsl(0, 100%, 74%);
+    width: 100%;
+    margin: 70px auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 47px;
+    text-align: center;
+}
+
+.learn-sec {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+    margin: 0;
+    font-size: 30px;
+    font-weight: 700;
+}
+.learn-sec p {
+    color: antiquewhite;
+    width: 80%;
+    font-weight: 600;
+    line-height: 1.5;
 }
