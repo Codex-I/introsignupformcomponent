@@ -1,139 +1,174 @@
 @import url("https://fonts.google.com/specimen/Poppins");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
 }
 
 body {
-    background-image: url(../images/bg-intro-mobile.png);
-    background-color: hsl(0, 100%, 74%);
-    width: 100%;
-    margin: 70px auto;
+  background-image: url(../images/bg-intro-mobile.png);
+  background-color: hsl(0, 100%, 74%);
+  width: 100%;
+  margin: 70px auto;
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    gap: 47px;
-    text-align: center;
-    margin: 0 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 47px;
+  text-align: center;
+  margin: 0 30px;
 }
 
 /* first section */
 .learn-first {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
 }
 
 h1 {
-    color: white;
-    margin: 0;
-    font-size: 30px;
-    font-weight: 700;
+  color: white;
+  margin: 0;
+  font-size: 30px;
+  font-weight: 700;
 }
 
 .learn-first p {
-    color: antiquewhite;
-    width: 96%;
-    font-weight: 600;
-    line-height: 1.5;
+  color: antiquewhite;
+  width: 96%;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+input {
+  position: relative;
+}
+
+div {
+  position: absolute;
 }
 
 /* Second section */
 .learn-sec {
-    display: flex;
-    flex-direction: column;
-    gap: 27px;
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+
+i {
+  color: hsl(0, 100%, 74%);
+  /* position: absolute; */
+  left: 80%;
+  bottom: 39.5%;
+  font-size: 1.5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.error-message {
+  text-align: right;
+  color: hsl(0, 100%, 74%);
+  font-size: 10px;
+  font-weight: 700;
+  font-style: italic;
 }
 
 .free-days {
-    padding: 23px;
-    border-radius: 10px;
-    border: none;
-    background-color: #6812b9;
-    color: white;
-    font-size: 15px;
-    box-shadow: 0px 10px 4px hsl(0deg 87% 69%);
+  padding: 23px;
+  border-radius: 10px;
+  border: none;
+  background-color: #6812b9;
+  color: white;
+  font-size: 15px;
+  box-shadow: 0px 10px 4px hsl(0deg 87% 69%);
 }
 
 form {
-    background-color: white;
-    box-shadow: 1px 1px 5px grey;
-    border-radius: 7px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    text-align: center;
+  background-color: white;
+  box-shadow: 1px 1px 5px grey;
+  border-radius: 7px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
 }
+
+.bg-image {
+  background-image: url("../images/icon-error.svg");
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+}
+
 input {
-    padding: 15px;
-    border: 1px solid grey;
-    border-radius: 5px;
-    font-weight: 600;
+  padding: 15px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  font-weight: 600;
 }
-form button {
-    background-color: hsl(154deg 66% 41%);
-    color: white;
-    font-size: 14px;
-    font-weight: 400;
-    text-transform: uppercase;
-    padding: 19px;
-    box-shadow: 0px 5px 2px hsl(154deg 76% 32%);
-    border: none;
-    border-radius: 5px;
+form a#submit {
+  background-color: hsl(154deg 66% 41%);
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 19px;
+  box-shadow: 0px 5px 2px hsl(154deg 76% 32%);
+  border: none;
+  border-radius: 5px;
 }
 
 .terms {
-    color: hsl(246, 25%, 77%);
-    font-size: 14px;
+  color: hsl(246, 25%, 77%);
+  font-size: 14px;
 }
 .terms a {
-    text-decoration: none;
-    font-weight: 800;
-    color: hsl(0, 100%, 74%);
+  text-decoration: none;
+  font-weight: 800;
+  color: hsl(0, 100%, 74%);
 }
 
 /* FOR LARGE SCREEN(laptopsize) */
 
 @media only screen and (min-width: 750px) {
-    body {
-        background-image: url(../images/bg-intro-desktop.png);
-        background-color: hsl(0, 100%, 74%);
-        width: 81%;
-        margin: 10% auto;
-        align-items: center;
-        height: 100vh;
-    }
+  body {
+    background-image: url(../images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+    width: 81%;
+    margin: 10% auto;
+    align-items: center;
+    height: 100vh;
+  }
 
-    main {
-        display: flex;
-        flex-direction: row;
-        flex-grow: 1;
-        justify-content: center;
-        gap: 67px;
-        margin-top: 5px;
-    }
+  main {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: center;
+    gap: 67px;
+    margin-top: 5px;
+  }
 
-    h1 {
-        width: 375px;
-    }
+  h1 {
+    width: 375px;
+  }
 
-    .learn-first {
-        align-items: flex-start;
-        padding-top: 163px;
-        text-align: left;
-    }
-    .learn-first p {
-        display: flex;
-        font-size: 16px;
-        width: 483px;
-    }
+  .learn-first {
+    align-items: flex-start;
+    padding-top: 163px;
+    text-align: left;
+  }
+  .learn-first p {
+    display: flex;
+    font-size: 16px;
+    width: 483px;
+  }
 }
 
 /* FINISHED AT EXACTLY 12:32 AM */
